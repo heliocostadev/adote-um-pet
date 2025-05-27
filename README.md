@@ -6,7 +6,7 @@
 Projeto desenvolvido para exercitar meus conhecimentos em **HTML, CSS, JavaScript, MongoDB e NodeJS,** para isso, foi implementado um site para auxiliar à adoção de animais de estimação. <br/>
 O objetivo é ajudar as pessoas que querem doar animais a encontrar pessoas que querem adotá-los, exibindo os pets na página home para que todos possam ve-los. <br/>
 O Get a Pet foi feito com a arquitetura MVC, aplicando boas práticas, testes e validações. Tudo que é necessário para a criação de um sistema robusto com base em Node. <br/>
-O projeto foi feito com auxílio do professor Matheus Battisti no curso "NodeJS do zero a Maestria".
+O projeto foi feito com auxílio do professor Luiz Carlos Camargo no curso de Engenharia de Software.
 
 ## Imagens
 ### Home
@@ -65,5 +65,5 @@ O projeto foi feito com auxílio do professor Matheus Battisti no curso "NodeJS 
 - **Este é um projeto educacional!**
 
 ## Autor
-| [<img src="https://avatars.githubusercontent.com/u/102488476?v=4" width=115><br><sub>Frederico Nogueira</sub>](https://www.linkedin.com/in/frederico-nogueira-654924238/) | 
+| [<img src="https://avatars.githubusercontent.com/u/112868811?v=4" width=115><br><sub>Hélio Costa</sub>](https://www.linkedin.com/in/heliocostajoi/) | 
 | :---: |
