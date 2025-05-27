@@ -1,0 +1,97 @@
+.petslist_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .petslist_header h1 {
+    margin: .8em 0;
+    color: var(--main-bg-color);
+  }
+  
+  .petslist_header a {
+    text-decoration: none;
+    background-color: var(--main-bg-color);
+    color: var(--white);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.1s;
+    padding: 0.5em 0.8em;
+    border-radius: 5px;
+    border: 2px solid var(--main-bg-color);
+  }
+  
+  .petslist_header a:hover {
+    background-color: transparent;
+    color: var(--main-bg-color);
+  }
+  
+  .petslist_container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .petlist_row {
+    border-bottom: 1px solid var(--main-bg-color);
+    padding: 1em;
+    margin: 1em;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .petlist_row img {
+    margin-right: 1em;
+  }
+  
+  .petlist_row span {
+    min-width: 100px;
+  }
+  
+  .actions {
+    margin-left: auto;
+  }
+  
+  .actions a,
+  .actions button {
+    text-decoration: none;
+    color: var(--main-bg-color);
+    border: 2px solid var(--main-bg-color);
+    border-radius: 5px;
+    padding: 7px 12px;
+    background-color: transparent;
+    margin-left: 1em;
+    cursor: pointer;
+    transition: 0.1s;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .actions a:hover,
+  .actions button:hover {
+    background-color: var(--main-bg-color);
+    color: var(--white);
+  }
+  
+  .actions .conclude_btn {
+    color: var(--white);
+    background-color: var(--main-bg-color);
+    font-weight: 500;
+    font-size: 14px;
+    transition: 0.1s;
+  }
+  
+  .actions .conclude_btn:hover {
+    color: var(--main-bg-color);
+    border-color: var(--main-bg-color);
+    background-color: transparent;
+  }
+  
+  /* my adoptions */
+  .contacts {
+    margin-left: 5em;
+  }
+  
+  .contacts p {
+    margin-bottom: 0.5em;
+  }
