@@ -10,7 +10,7 @@ export default function useAuth() {
   const [authenticated, setAuthenticated] = useState(false)
   const history = useHistory()
   // eslint-disable-next-line
-  const [loading, setLoading] = useState(true)
+  //const [loading, setLoading] = useState(true)
 
   useEffect(() => {
 
@@ -21,7 +21,7 @@ export default function useAuth() {
       setAuthenticated(true)
     }
 
-    setLoading(false)
+   // setLoading(false)
   }, [])
 
   async function register(user) {

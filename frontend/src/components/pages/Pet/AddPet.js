@@ -34,19 +34,23 @@ function AddPet() {
     // formData.append("pet", petFormData);
 
     const data = await api
-      .post(`pets/create`, formData, {
-        Authorization: `Bearer ${JSON.parse(token)}`,
-        "Content-Type": "multipart/form-data",
-      })
+     .post(`pets/create`, formData, {
+  headers: {
+    Authorization: `Bearer ${JSON.parse(token)}`,
+    "Content-Type": "multipart/form-data",
+  },
+})
+
       .then((response) => {
         // console.log(response.data);
         return response.data;
       })
       .catch((err) => {
-        // console.log(err);
-        msgType = "error";
-        return err.response.data;
-      });
+  console.log('Erro ao cadastrar pet:', err.response);
+  msgType = "error";
+  return err.response?.data || { message: 'Erro inesperado ao cadastrar pet.' };
+});
+
 
     setFlashMessage(data.message, msgType);
     if (msgType !== "error") {

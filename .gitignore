@@ -1,1 +1,25 @@
-node_modules
+# Node dependencies
+node_modules/
+
+# Variáveis de ambiente
+.env
+
+# Pastas geradas automaticamente
+build/
+dist/
+coverage/
+
+# Pastas de documentação interna
+markdown_do_projeto/
+script_markdown/
+
+# Imagens locais (evita subir arquivos grandes ou sensíveis)
+backend/public/images/users/
+backend/public/images/pets/
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

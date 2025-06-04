@@ -3,6 +3,12 @@ const cors = require('cors')
 
 const app = express()
 
+const path = require('path')
+//app.use('/images', express.static(path.join(__dirname, 'public/images')))
+app.use('/images/pets', express.static(path.join(__dirname, 'public/images/pets')))
+
+
+
 //Config JSON response
 app.use(express.json())
 
