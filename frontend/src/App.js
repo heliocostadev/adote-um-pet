@@ -1,3 +1,4 @@
+
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // components
@@ -13,7 +14,7 @@ import Register from "./components/pages/Auth/Register";
 import Profile from "./components/pages/User/Profile";
 import MyPets from "./components/pages/Pet/MyPets"
 import AddPet from "./components/pages/Pet/AddPet";
-import EditPet from "./components/pages/Pet/EditPet";
+import EditPet from "./components/pages/Pet/EditPet"; // Certifique-se que este é o componente correto
 import PetDetails from "./components/pages/Pet/PetDetails";
 import MyAdoptions from "./components/pages/Pet/MyAdoptions";
 
@@ -46,11 +47,13 @@ function App() {
             <Route path="/pet/MyAdoptions">
               <MyAdoptions />
             </Route>
-            <Route path="/pet/:id">
-              <PetDetails />
-            </Route>
+            {/* ROTA DE EDIÇÃO VEM ANTES DA ROTA DE DETALHES */}
             <Route path="/pet/edit/:id">
               <EditPet />
+            </Route>
+            {/* ROTA DE DETALHES VEM DEPOIS */}
+            <Route path="/pet/:id">
+              <PetDetails />
             </Route>
             <Route path="/">
               <Home />
@@ -64,3 +67,4 @@ function App() {
 }
 
 export default App;
+
